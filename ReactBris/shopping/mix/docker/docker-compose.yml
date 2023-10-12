@@ -1,0 +1,27 @@
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: pgadmin
+      POSTGRES_PASSWORD: wJ7pwyTJSq8VmeVu
+      POSTGRES_DB: pgadmin
+    ports:
+      - "5432:5432"
+
+
+# networks:
+#   default:
+#     external:
+#       name: my_network  # Change 'my_network' to your desired network name
+
+# How to compose: 
+# docker-compose -f docker-compose.yml up
+
+# How to connect:
+# DEV_DB_CLIENT="postgresql"
+# DEV_DB_HOST="0.0.0.0"
+# DEV_DB_USER="pgadmin"
+# DEV_DB_PASS="wJ7pwyTJSq8VmeVu"
+# DEV_DB_NAME="pgadmin"
+# DEV_DB_CHARSET="utf8"
