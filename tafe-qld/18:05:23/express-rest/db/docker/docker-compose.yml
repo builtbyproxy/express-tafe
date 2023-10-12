@@ -1,0 +1,24 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Lachlan123
+      POSTGRES_USER: pgadmin
+    ports:
+       - "5432:5432" 
+
+
+# How to compose: 
+# docker-compose -f docker-compose.yml up
+
+# How to connect:
+# DEV_DB_CLIENT="postgresql"
+# DEV_DB_HOST="0.0.0.0"
+# DEV_DB_USER="pgadmin"
+# DEV_DB_PASS="wJ7pwyPKSq8VmeVu"
+# DEV_DB_NAME="pgadmin"
+# DEV_DB_CHARSET="utf8"

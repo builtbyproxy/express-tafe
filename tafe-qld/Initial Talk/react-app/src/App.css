@@ -1,0 +1,11 @@
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemonContainer {
+  display: flex;
+  justify-content: center;
+}
